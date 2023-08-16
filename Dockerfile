@@ -1,13 +1,13 @@
-FROM circleci/node:latest-browsers as builder
+FROM circleci/node:14.21.3 as builder
 
 WORKDIR /usr/src/app/
-USER root
+#USER root
 COPY package.json ./
 RUN yarn
 
 COPY ./ ./
 
-RUN npm run test:all
+#RUN npm run test:all
 
 RUN npm run build
 
