@@ -1,4 +1,4 @@
-FROM circleci/node:14.21.3 as builder
+FROM registry.cn-shanghai.aliyuncs.com/crun/node:14.21.3 as builder
 
 WORKDIR /usr/src/app/
 #USER root
