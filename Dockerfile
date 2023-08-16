@@ -1,4 +1,4 @@
-FROM registry.cn-shanghai.aliyuncs.com/crun/node:14.21.3 as builder
+FROM circleci/node:latest-browsers as builder
 
 WORKDIR /usr/src/app/
 #USER root
