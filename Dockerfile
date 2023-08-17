@@ -1,4 +1,4 @@
-FROM node:14.21.3 as builder
+FROM node:16.20.2 as builder
 
 USER root
 WORKDIR /workspace
