@@ -1,4 +1,4 @@
-FROM circleci/node:latest-browsers as builder
+FROM node:14.21.3 as builder
 
 USER root
 WORKDIR /workspace
